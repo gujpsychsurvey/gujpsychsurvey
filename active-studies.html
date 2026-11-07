@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Active Studies — GujPsychSurvey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Table Styling for Studies */
+  .table-responsive { overflow-x: auto; margin-top: 2rem; margin-bottom: 3rem; }
+  .studies-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 900px; }
+  .studies-table th, .studies-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.9rem; vertical-align: top; }
+  .studies-table th { background: var(--accent-soft); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  .studies-table tr:last-child td { border-bottom: none; }
+  .studies-table tr:hover { background: var(--bg); }
+  
+  /* Important Notice Box */
+  .warning-box { background: var(--alert-bg); border-left: 4px solid var(--alert-ink); padding: 1.5rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
+  .warning-box p { color: var(--alert-ink); margin: 0; }
+
+  /* Empty State Box */
+  .empty-state { text-align: center; padding: 4rem 2rem; background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); }
+  .empty-state h3 { font-size: 1.2rem; color: var(--ink); margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main>
+  <div class="container" style="padding-top: 3rem; padding-bottom: 4rem; max-width: 1200px;">
+    
+    <h1 style="color: var(--ink); margin-bottom: 0.5rem;">Active Studies</h1>
+    <p class="lead" style="margin-bottom: 2rem;">GujPsychSurvey · Studies currently recruiting participants</p>
+
+    <div style="max-width: 900px;">
+      <p>This page lists research studies in Gujarat that are open for participation right now. Each study is run by its own researchers on their own survey platform. GujPsychSurvey only lists the study and sends you to the researcher's link; it does not host the questionnaire or collect your responses.</p>
+      
+      <p>Every study listed here has been submitted with Institutional Ethics Committee (IEC) approval details, which have been checked administratively. Please read each entry carefully and decide for yourself. Taking part is entirely voluntary.</p>
+
+      <div class="warning-box">
+        <p><strong>Before you click:</strong> Read the consent information on the researcher's survey. Never share OTPs, passwords, PINs, Aadhaar, PAN or bank details with any study.</p>
+      </div>
+
+      <h2 style="font-size: 1.3rem; margin-top: 2rem; color: var(--ink);">How to read the table</h2>
+      <ul style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+        <li><strong>Study title and short description:</strong> What the study is about, in one or two lines.</li>
+        <li><strong>Principal investigator & PI details:</strong> Who is responsible for the study, and where they work.</li>
+        <li><strong>Survey language:</strong> Gujarati, English, Hindi, or a combination.</li>
+        <li><strong>Who can take part:</strong> The inclusion and exclusion criteria. Please take part only if you are eligible.</li>
+        <li><strong>Time needed:</strong> The estimated time to complete the study.</li>
+        <li><strong>IEC details:</strong> The ethics committee that approved the study and its approval number.</li>
+        <li><strong>Participate:</strong> Opens the researcher's own survey in a new tab. The link is shown only while recruitment is open.</li>
+      </ul>
+    </div>
+
+    <!-- ACTIVE STUDIES TABLE SECTION -->
+    <h2 style="font-size: 1.5rem; color: var(--ink); margin-bottom: 1rem;">Studies open for participation</h2>
+
+    <!-- EMPTY STATE (Remove this div when you add your first study) -->
+    <div class="empty-state">
+      <h3>No studies are recruiting right now.</h3>
+      <p>Please check back soon, or join the participant list to be told when one opens.</p>
+    </div>
+
+    <!-- 
+      ========================================================
+      TABLE INSTRUCTIONS FOR ADMIN:
+      When you have a study, delete the ".empty-state" div above.
+      Then, uncomment the table below and copy a <tr> row to add a new study.
+      ========================================================
+    -->
+    
+    <!--
+    <div class="table-responsive">
+      <table class="studies-table">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Study Title & Description</th>
+            <th>PI Details</th>
+            <th>Survey Language</th>
+            <th>Eligibility</th>
+            <th>Time Needed</th>
+            <th>IEC Details</th>
+            <th>Date Listed</th>
+            <th>Participate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <strong>Study Title Here</strong><br>
+              <span style="color: var(--muted);">Short description of the study in 1-2 lines.</span>
+            </td>
+            <td>
+              Dr. Name<br>
+              <span style="color: var(--muted);">Institution<br>email@example.com</span>
+            </td>
+            <td>English, Gujarati</td>
+            <td>Adults aged 18-65</td>
+            <td>15 mins</td>
+            <td>
+              IEC Name<br>
+              <span style="color: var(--muted);">Approval: XX/2026</span>
+            </td>
+            <td>01 Nov 2026</td>
+            <td><a href="https://link-to-survey.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Click Here</a></td>
+          </tr>
+          <!-- ADD NEW ROWS HERE -->
+        </tbody>
+      </table>
+    </div>
+    -->
+
+  </div>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archived Studies — GujPsychSurvey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Table Styling for Studies */
+  .table-responsive { overflow-x: auto; margin-top: 2rem; margin-bottom: 3rem; }
+  .studies-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 900px; }
+  .studies-table th, .studies-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.9rem; vertical-align: top; }
+  .studies-table th { background: var(--accent-soft); color: var(--accent); font-weight: 600; white-space: nowrap; }
+  .studies-table tr:last-child td { border-bottom: none; }
+  .studies-table tr:hover { background: var(--bg); }
+
+  /* Empty State Box */
+  .empty-state { text-align: center; padding: 4rem 2rem; background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); }
+  .empty-state h3 { font-size: 1.2rem; color: var(--ink); margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main>
+  <div class="container" style="padding-top: 3rem; padding-bottom: 4rem; max-width: 1200px;">
+    
+    <h1 style="color: var(--ink); margin-bottom: 0.5rem;">Archived Studies</h1>
+    <p class="lead" style="margin-bottom: 2rem;">GujPsychSurvey · Studies that are no longer recruiting</p>
+
+    <div style="max-width: 900px;">
+      <p>This page lists studies that were previously listed on GujPsychSurvey but are no longer recruiting. The participation link has been removed. The details remain visible for transparency and so that past listings can be checked.</p>
+      
+      <p>A study may move here because recruitment finished, its ethics approval lapsed, or a concern was found.</p>
+
+      <h2 style="font-size: 1.3rem; margin-top: 2rem; color: var(--ink);">Status Key</h2>
+      <ul style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+        <li><strong>Completed:</strong> Recruitment finished as planned.</li>
+        <li><strong>Withdrawn:</strong> The study was stopped or removed before completion, by the researchers or by us.</li>
+      </ul>
+    </div>
+
+    <!-- ARCHIVED STUDIES TABLE SECTION -->
+    <h2 style="font-size: 1.5rem; color: var(--ink); margin-bottom: 1rem;">Closed Studies</h2>
+
+    <!-- EMPTY STATE (Remove this div when you add your first study) -->
+    <div class="empty-state">
+      <h3>No archived studies at the moment.</h3>
+      <p>Completed and withdrawn studies will appear here.</p>
+    </div>
+
+    <!-- 
+      ========================================================
+      TABLE INSTRUCTIONS FOR ADMIN:
+      When you have a study, delete the ".empty-state" div above.
+      Then, uncomment the table below and copy a <tr> row to add a new study.
+      ========================================================
+    -->
+    
+    <!--
+    <div class="table-responsive">
+      <table class="studies-table">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Study Title & Description</th>
+            <th>PI Details</th>
+            <th>Survey Language</th>
+            <th>IEC Details</th>
+            <th>Date Listed</th>
+            <th>Date Closed</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <strong>Study Title Here</strong><br>
+              <span style="color: var(--muted);">Short description of the study.</span>
+            </td>
+            <td>
+              Dr. Name<br>
+              <span style="color: var(--muted);">Institution<br>email@example.com</span>
+            </td>
+            <td>English, Gujarati</td>
+            <td>
+              IEC Name<br>
+              <span style="color: var(--muted);">Approval: XX/2026</span>
+            </td>
+            <td>01 Sep 2026</td>
+            <td>01 Nov 2026</td>
+            <td><span class="badge" style="background: #ece9e1; color: #4a4638;">Completed</span></td>
+          </tr>
+          <!-- ADD NEW ROWS HERE -->
+        </tbody>
+      </table>
+    </div>
+    -->
+
+  </div>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="script.js"></script>
+</body>
+</html>
