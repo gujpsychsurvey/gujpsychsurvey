@@ -6,9 +6,7 @@ GujPsychSurvey is a lightweight, independently run, static website that connects
 
 *This is a participant recruitment directory. It does not host surveys, collect research data, or provide medical advice.*
 
-## 🌐 Live Site
-*(Add your GitHub Pages URL here once deployed, e.g., `https://yourusername.github.io/gujpsych-survey/`)*
-
+## 🌐 Live Site : https://gujpsychsurvey.github.io/gujpsychsurvey/
 ---
 
 ## 🛠️ Tech Stack & Architecture
