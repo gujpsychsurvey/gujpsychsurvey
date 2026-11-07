@@ -124,7 +124,7 @@ a:hover { text-decoration: underline; }
 .section-title { text-align: center; margin-bottom: 3rem; }
 .section-title h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
 .section-title p { color: var(--muted); font-size: 1.1rem; }
-.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.steps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 .step-card {
   background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 2rem; position: relative;
