@@ -1,16 +1,19 @@
-## Hi there 👋
+# GujPsychSurvey
 
-<!--
-**gujpsychsurvey/gujpsychsurvey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**A directory connecting Gujarat with ethically approved research.**
 
-Here are some ideas to get you started:
+GujPsychSurvey is a lightweight, independently run, static website that connects researchers running ethically approved studies with people in Gujarat who may wish to take part. 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+*This is a participant recruitment directory. It does not host surveys, collect research data, or provide medical advice.*
+
+## 🌐 Live Site
+*(Add your GitHub Pages URL here once deployed, e.g., `https://yourusername.github.io/gujpsych-survey/`)*
+
+---
+
+## 🛠️ Tech Stack & Architecture
+This is a purely **static website**. There is no backend database, no server-side language (like PHP or Python), and no build step. 
+- **HTML5:** Content structure.
+- **CSS3 (`styles.css`):** Custom clinical-portal styling with CSS variables for easy theming.
+- **Vanilla JavaScript (`script.js`):** Used *only* to fetch the shared header and footer and handle the mobile hamburger menu.
+- **Hosting:** GitHub Pages.
