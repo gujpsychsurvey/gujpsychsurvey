@@ -235,3 +235,103 @@ a:hover { text-decoration: underline; }
   font-size: 0.85rem;
   color: #94a3b8;
 }
+
+/* --- Mobile Header Fix --- */
+@media (max-width: 900px) {
+  /* Hide the text links */
+  #main-nav ul {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  /* Show the links when the hamburger is clicked */
+  #main-nav.open ul {
+    display: flex;
+  }
+
+  /* Make the nav container drop down below the header */
+  #main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  #main-nav.open {
+    display: block;
+  }
+
+  /* Show the hamburger button */
+  .hamburger {
+    display: block;
+  }
+}
+
+/* --- Responsive Header & Hamburger Menu --- */
+
+/* Hide hamburger on large screens */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Hamburger lines styling */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--ink);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* On screens smaller than 1060px (Tablets & Phones) */
+@media (max-width: 1060px) {
+  /* 1. Show the hamburger button */
+  .hamburger {
+    display: block;
+  }
+
+  /* 2. Hide the main navigation by default */
+  #main-nav {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+
+  /* 3. Show the navigation when the 'open' class is added via JS */
+  #main-nav.open {
+    display: block;
+  }
+
+  /* 4. Make the links stack vertically instead of horizontally */
+  #main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  #main-nav ul li {
+    width: 100%;
+  }
+  
+  #main-nav ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+  }
+}
