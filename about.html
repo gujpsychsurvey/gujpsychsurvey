@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About This Site — GujPsychSurvey</title>
+<title data-en="About This Site — GujPsychSurvey" data-gu="આ સાઇટ વિશે — GujPsychSurvey">About This Site — GujPsychSurvey</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -23,6 +23,14 @@
   .data-table th { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
   .data-table tr:last-child td { border-bottom: none; }
 </style>
+
+<!-- Prevent flash of English -->
+<script>
+  const savedLang = localStorage.getItem('gps-lang');
+  if (savedLang) {
+    document.documentElement.lang = savedLang;
+  }
+</script>
 </head>
 <body>
 
@@ -33,55 +41,55 @@
 <main>
   <div class="container" style="padding-top: 3rem; padding-bottom: 4rem; max-width: 900px;">
     
-    <h1 style="color: var(--ink); margin-bottom: 0.5rem;">About GujPsychSurvey</h1>
-    <p class="lead" style="margin-bottom: 3rem;">Connecting researchers with communities across Gujarat through ethical, transparent recruitment.</p>
+    <h1 style="color: var(--ink); margin-bottom: 0.5rem;" data-en="About GujPsychSurvey" data-gu="GujPsychSurvey વિશે">About GujPsychSurvey</h1>
+    <p class="lead" style="margin-bottom: 3rem;" data-en="Connecting researchers with communities across Gujarat through ethical, transparent recruitment." data-gu="નૈતિક, પારદર્શક ભરતી દ્વારા સમગ્ર ગુજરાતના સમુદાયો સાથે સંશોધકોને જોડવું.">Connecting researchers with communities across Gujarat through ethical, transparent recruitment.</p>
 
     <!-- 1. Purpose -->
     <div class="content-section">
-      <h2>1. Purpose</h2>
-      <p>GujPsychSurvey is a free online directory that connects researchers running ethically approved studies with people in Gujarat who may wish to take part. Its purpose is participant recruitment. It does not host or conduct research.</p>
-      <p><strong>Its aims are to:</strong></p>
+      <h2 data-en="1. Purpose" data-gu="૧. હેતુ">1. Purpose</h2>
+      <p data-en="GujPsychSurvey is a free online directory that connects researchers running ethically approved studies with people in Gujarat who may wish to take part. Its purpose is participant recruitment. It does not host or conduct research." data-gu="GujPsychSurvey એ એક મફત ઑનલાઇન ડિરેક્ટરી છે જે નૈતિક રીતે મંજૂર અભ્યાસો ચલાવતા સંશોધકોને ગુજરાતના એવા લોકો સાથે જોડે છે જેઓ ભાગ લેવા માંગતા હોય. તેનો હેતુ સહભાગી ભરતી છે. તે સંશોધન હોસ્ટ કરતું નથી અથવા કરતું નથી.">GujPsychSurvey is a free online directory that connects researchers running ethically approved studies with people in Gujarat who may wish to take part. Its purpose is participant recruitment. It does not host or conduct research.</p>
+      <p data-en="<strong>Its aims are to:</strong>" data-gu="<strong>તેના ઉદ્દેશ્યો છે:</strong>"><strong>Its aims are to:</strong></p>
       <ul>
-        <li>Make research studies accessible to the Gujarati-speaking population.</li>
-        <li>Help researchers recruit participants beyond their own institutional networks.</li>
-        <li>Provide one common place to discover ongoing research in Gujarat.</li>
-        <li>Gradually build a network of people who are interested in taking part in research.</li>
-        <li>Promote ethical, transparent research recruitment.</li>
+        <li data-en="Make research studies accessible to the Gujarati-speaking population." data-gu="ગુજરાતી ભાષી વસ્તી માટે સંશોધન અભ્યાસોને સુલભ બનાવવા.">Make research studies accessible to the Gujarati-speaking population.</li>
+        <li data-en="Help researchers recruit participants beyond their own institutional networks." data-gu="સંશોધકોને તેમના પોતાના સંસ્થાકીય નેટવર્કની બહાર સહભાગીઓની ભરતી કરવામાં મદદ કરવી.">Help researchers recruit participants beyond their own institutional networks.</li>
+        <li data-en="Provide one common place to discover ongoing research in Gujarat." data-gu="ગુજરાતમાં ચાલી રહેલા સંશોધનને શોધવા માટે એક સામાન્ય સ્થાન પ્રદાન કરવું.">Provide one common place to discover ongoing research in Gujarat.</li>
+        <li data-en="Gradually build a network of people who are interested in taking part in research." data-gu="સંશોધનમાં ભાગ લેવામાં રસ ધરાવતા લોકોનું નેટવર્ક ધીમે ધીમે બનાવવું.">Gradually build a network of people who are interested in taking part in research.</li>
+        <li data-en="Promote ethical, transparent research recruitment." data-gu="નૈતિક, પારદર્શક સંશોધન ભરતીને પ્રોત્સાહન આપવું.">Promote ethical, transparent research recruitment.</li>
       </ul>
-      <p>Research in mental health and related fields needs people from the communities it hopes to understand. Findings from other countries or regions do not always reflect the languages, cultures, family and social circumstances, or healthcare needs of people in Gujarat.</p>
+      <p data-en="Research in mental health and related fields needs people from the communities it hopes to understand. Findings from other countries or regions do not always reflect the languages, cultures, family and social circumstances, or healthcare needs of people in Gujarat." data-gu="માનસિક સ્વાસ્થ્ય અને સંબંધિત ક્ષેત્રોમાં સંશોધનને તે સમુદાયોના લોકોની જરૂર છે જેને તે સમજવાની આશા રાખે છે. અન્ય દેશો અથવા પ્રદેશોના તારણો હંમેશા ગુજરાતના લોકોની ભાષાઓ, સંસ્કૃતિઓ, પરિવાર અને સામાજિક પરિસ્થિતિઓ અથવા આરોગ્યસંભાળની જરૂરિયાતોને પ્રતિબિંબિત કરતા નથી.">Research in mental health and related fields needs people from the communities it hopes to understand. Findings from other countries or regions do not always reflect the languages, cultures, family and social circumstances, or healthcare needs of people in Gujarat.</p>
     </div>
 
     <!-- 2. What it is and is not -->
     <div class="content-section">
-      <h2>2. What GujPsychSurvey is, and is not</h2>
+      <h2 data-en="2. What GujPsychSurvey is, and is not" data-gu="૨. GujPsychSurvey શું છે અને શું નથી">2. What GujPsychSurvey is, and is not</h2>
       <div class="table-wrapper">
         <table class="data-table">
           <thead>
             <tr>
-              <th>It is</th>
-              <th>It is not</th>
+              <th data-en="It is" data-gu="તે છે">It is</th>
+              <th data-en="It is not" data-gu="તે નથી">It is not</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>A lightweight, independently run directory of studies related to mental health and psychology that are open for participation across Gujarat state.</td>
-              <td>A questionnaire-hosting platform. Surveys stay on the researcher's own platform.</td>
+              <td data-en="A lightweight, independently run directory of studies related to mental health and psychology that are open for participation across Gujarat state." data-gu="માનસિક સ્વાસ્થ્ય અને મનોવિજ્ઞાન સંબંધિત અભ્યાસોની હલકી, સ્વતંત્ર રીતે ચલાવવામાં આવતી ડિરેક્ટરી જે સમગ્ર ગુજરાત રાજ્યમાં ભાગીદારી માટે ખુલ્લી છે.">A lightweight, independently run directory of studies related to mental health and psychology that are open for participation across Gujarat state.</td>
+              <td data-en="A questionnaire-hosting platform. Surveys stay on the researcher's own platform." data-gu="પ્રશ્નાવલી-હોસ્ટિંગ પ્લેટફોર્મ. સર્વે સંશોધકના પોતાના પ્લેટફોર્મ પર જ રહે છે.">A questionnaire-hosting platform. Surveys stay on the researcher's own platform.</td>
             </tr>
             <tr>
-              <td>Open to anyone: no login and no registration are needed to browse.</td>
-              <td>A participant-login portal.</td>
+              <td data-en="Open to anyone: no login and no registration are needed to browse." data-gu="કોઈપણ માટે ખુલ્લું: બ્રાઉઝ કરવા માટે કોઈ લોગિન અને નોંધણીની જરૂર નથી.">Open to anyone: no login and no registration are needed to browse.</td>
+              <td data-en="A participant-login portal." data-gu="સહભાગી-લોગિન પોર્ટલ.">A participant-login portal.</td>
             </tr>
             <tr>
-              <td>An optional email list, so people can hear about newly approved studies.</td>
-              <td>A central database of research participants or their demographic details.</td>
+              <td data-en="An optional email list, so people can hear about newly approved studies." data-gu="એક વૈકલ્પિક ઇમેઇલ સૂચિ, જેથી લોકો નવા મંજૂર થયેલા અભ્યાસો વિશે સાંભળી શકે.">An optional email list, so people can hear about newly approved studies.</td>
+              <td data-en="A central database of research participants or their demographic details." data-gu="સંશોધન સહભાગીઓ અથવા તેમની વસ્તીવિષયક વિગતોનો કેન્દ્રીય ડેટાબેઝ.">A central database of research participants or their demographic details.</td>
             </tr>
             <tr>
-              <td>Open to researchers using any survey platform (Google Forms, Microsoft Forms, PsyToolkit and others).</td>
-              <td>A system that requires researchers to use one particular platform, or an institutional research-management system.</td>
+              <td data-en="Open to researchers using any survey platform (Google Forms, Microsoft Forms, PsyToolkit and others)." data-gu="કોઈપણ સર્વે પ્લેટફોર્મ (Google Forms, Microsoft Forms, PsyToolkit અને અન્ય) નો ઉપયોગ કરતા સંશોધકો માટે ખુલ્લું.">Open to researchers using any survey platform (Google Forms, Microsoft Forms, PsyToolkit and others).</td>
+              <td data-en="A system that requires researchers to use one particular platform, or an institutional research-management system." data-gu="એવી સિસ્ટમ જે સંશોધકોને એક ચોક્કસ પ્લેટફોર્મનો ઉપયોગ કરવાની જરૂર છે, અથવા સંસ્થાકીય સંશોધન-વ્યવસ્થાપન સિસ્ટમ.">A system that requires researchers to use one particular platform, or an institutional research-management system.</td>
             </tr>
             <tr>
-              <td>A site that does not track individual visitors or who opens which survey.</td>
-              <td>An ethics committee, a healthcare provider, or a guarantor of any study.</td>
+              <td data-en="A site that does not track individual visitors or who opens which survey." data-gu="એવી સાઇટ જે વ્યક્તિગત મુલાકાતીઓ અથવા કોણ કયો સર્વે ખોલે છે તેને ટ્રેક કરતી નથી.">A site that does not track individual visitors or who opens which survey.</td>
+              <td data-en="An ethics committee, a healthcare provider, or a guarantor of any study." data-gu="નૈતિકતા સમિતિ, આરોગ્ય સેવા પ્રદાતા અથવા કોઈપણ અભ્યાસનું ગેરંટર.">An ethics committee, a healthcare provider, or a guarantor of any study.</td>
             </tr>
           </tbody>
         </table>
@@ -90,118 +98,118 @@
 
     <!-- 3. How it works -->
     <div class="content-section">
-      <h2>3. How the directory works</h2>
-      <p><strong>For researchers.</strong> A researcher submits a study through a form, with the study details and the ethics approval documents. The administrator checks the application and either approves it, asks for changes, or declines it. Approved studies are published under the Active survey list.</p>
+      <h2 data-en="3. How the directory works" data-gu="૩. ડિરેક્ટરી કેવી રીતે કાર્ય કરે છે">3. How the directory works</h2>
+      <p data-en="<strong>For researchers.</strong> A researcher submits a study through a form, with the study details and the ethics approval documents. The administrator checks the application and either approves it, asks for changes, or declines it. Approved studies are published under the Active survey list." data-gu="<strong>સંશોધકો માટે.</strong> એક સંશોધક ફોર્મ દ્વારા અભ્યાસ સબમિટ કરે છે, જેમાં અભ્યાસની વિગતો અને નૈતિકતા મંજૂરી દસ્તાવેજો હોય છે. વ્યવસ્થાપક અરજીની ચકાસણી કરે છે અને ક્યાં તો તેને મંજૂર કરે છે, ફેરફારો માંગે છે અથવા નકારે છે. મંજૂર થયેલા અભ્યાસો સક્રિય સર્વે યાદી હેઠળ પ્રકાશિત થાય છે."><strong>For researchers.</strong> A researcher submits a study through a form, with the study details and the ethics approval documents. The administrator checks the application and either approves it, asks for changes, or declines it. Approved studies are published under the Active survey list.</p>
     </div>
 
     <!-- 4. Ethics -->
     <div class="content-section">
-      <h2>4. Ethics</h2>
+      <h2 data-en="4. Ethics" data-gu="૪. નૈતિકતા">4. Ethics</h2>
       
-      <h3>What we check before a study is listed</h3>
+      <h3 data-en="What we check before a study is listed" data-gu="અભ્યાસ સૂચિબદ્ધ થાય તે પહેલાં અમે શું ચકાસીએ છીએ">What we check before a study is listed</h3>
       <ul>
-        <li>The principal investigator's identity and institutional affiliation.</li>
-        <li>That approval has been given by an Institutional Ethics Committee (IEC/IRB), with the committee's name, the approval number, and a supporting document.</li>
-        <li>That the study description, eligibility criteria and participation link are clear and complete.</li>
-        <li>That the study has contact details for questions and concerns.</li>
+        <li data-en="The principal investigator's identity and institutional affiliation." data-gu="પ્રિન્સિપલ ઇન્વેસ્ટિગેટરની ઓળખ અને સંસ્થાકીય જોડાણ.">The principal investigator's identity and institutional affiliation.</li>
+        <li data-en="That approval has been given by an Institutional Ethics Committee (IEC/IRB), with the committee's name, the approval number, and a supporting document." data-gu="કે મંજૂરી સંસ્થાકીય નૈતિકતા સમિતિ (IEC/IRB) દ્વારા આપવામાં આવી છે, જેમાં સમિતિનું નામ, મંજૂરી નંબર અને સહાયક દસ્તાવેજ છે.">That approval has been given by an Institutional Ethics Committee (IEC/IRB), with the committee's name, the approval number, and a supporting document.</li>
+        <li data-en="That the study description, eligibility criteria and participation link are clear and complete." data-gu="કે અભ્યાસ વર્ણન, પાત્રતા માપદંડ અને ભાગીદારી લિંક સ્પષ્ટ અને સંપૂર્ણ છે.">That the study description, eligibility criteria and participation link are clear and complete.</li>
+        <li data-en="That the study has contact details for questions and concerns." data-gu="કે અભ્યાસમાં પ્રશ્નો અને ચિંતાઓ માટે સંપર્ક વિગતો છે.">That the study has contact details for questions and concerns.</li>
       </ul>
 
-      <h3>What we do not do</h3>
-      <p>GujPsychSurvey is not an ethics committee. We do not judge the scientific merit of a study, monitor how it is conducted, or check the responses it collects. Our check is administrative. Participants should still read the consent information on the researcher's own survey and decide for themselves.</p>
+      <h3 data-en="What we do not do" data-gu="અમે શું કરતા નથી">What we do not do</h3>
+      <p data-en="GujPsychSurvey is not an ethics committee. We do not judge the scientific merit of a study, monitor how it is conducted, or check the responses it collects. Our check is administrative. Participants should still read the consent information on the researcher's own survey and decide for themselves." data-gu="GujPsychSurvey એ નૈતિકતા સમિતિ નથી. અમે અભ્યાસની વૈજ્ઞાનિક યોગ્યતાનો નિર્ણય કરતા નથી, તે કેવી રીતે ચલાવવામાં આવે છે તેની દેખરેખ રાખતા નથી અથવા તે એકત્રિત કરેલા પ્રતિસાદોની ચકાસણી કરતા નથી. અમારી ચકાસણી વહીવટી છે. સહભાગીઓએ હજી પણ સંશોધકના પોતાના સર્વે પર સંમતિની માહિતી વાંચવી જોઈએ અને પોતાને માટે નિર્ણય લેવો જોઈએ.">GujPsychSurvey is not an ethics committee. We do not judge the scientific merit of a study, monitor how it is conducted, or check the responses it collects. Our check is administrative. Participants should still read the consent information on the researcher's own survey and decide for themselves.</p>
 
-      <h3>What researchers must do</h3>
+      <h3 data-en="What researchers must do" data-gu="સંશોધકોએ શું કરવું જોઈએ">What researchers must do</h3>
       <ul>
-        <li>Obtain and keep valid ethics approval for as long as the study is listed.</li>
-        <li>Provide a participant information sheet and obtain informed consent, with participation voluntary and withdrawal possible.</li>
-        <li>Protect participants' data and follow data-protection law, including where children (people under 18) take part.</li>
-        <li>Provide support information where a study may cause distress.</li>
-        <li>Tell us when the study closes, and before any material change to its design, criteria, link or approval.</li>
+        <li data-en="Obtain and keep valid ethics approval for as long as the study is listed." data-gu="અભ્યાસ સૂચિબદ્ધ હોય ત્યાં સુધી માન્ય નૈતિકતા મંજૂરી મેળવો અને રાખો.">Obtain and keep valid ethics approval for as long as the study is listed.</li>
+        <li data-en="Provide a participant information sheet and obtain informed consent, with participation voluntary and withdrawal possible." data-gu="સહભાગી માહિતી પત્રક પ્રદાન કરો અને માહિતગાર સંમતિ મેળવો, ભાગીદારી સ્વૈચ્છિક અને પાછળ ખસવાની શક્યતા સાથે.">Provide a participant information sheet and obtain informed consent, with participation voluntary and withdrawal possible.</li>
+        <li data-en="Protect participants' data and follow data-protection law, including where children (people under 18) take part." data-gu="સહભાગીઓના ડેટાનું રક્ષણ કરો અને ડેટા-સંરક્ષણ કાયદાનું પાલન કરો, જેમાં બાળકો (૧૮ વર્ષથી ઓછી ઉંમરના લોકો) ભાગ લેતા હોય તેવા કિસ્સાઓનો સમાવેશ થાય છે.">Protect participants' data and follow data-protection law, including where children (people under 18) take part.</li>
+        <li data-en="Provide support information where a study may cause distress." data-gu="જ્યાં અભ્યાસ મુશ્કેલીનું કારણ બની શકે ત્યાં સહાયક માહિતી પ્રદાન કરો.">Provide support information where a study may cause distress.</li>
+        <li data-en="Tell us when the study closes, and before any material change to its design, criteria, link or approval." data-gu="અભ્યાસ ક્યારે બંધ થાય છે અને તેની ડિઝાઇન, માપદંડ, લિંક અથવા મંજૂરીમાં કોઈપણ મહત્વપૂર્ણ ફેરફાર પહેલાં અમને જણાવો.">Tell us when the study closes, and before any material change to its design, criteria, link or approval.</li>
       </ul>
 
-      <h3>Changes, suspension and records</h3>
-      <p>A material change to an approved study is re-reviewed before the change appears on the site. If a study's approval lapses, a concern is raised, or its link no longer matches its description, we may suspend the listing, ask for corrections, or withdraw it. Administrative decisions and changes are recorded so that there is a history of what was approved, when, and why.</p>
-      <p><em>Guiding references: the ICMR National Ethical Guidelines for Biomedical and Health Research Involving Human Participants (2017), which describe voluntary participation, informed consent, privacy and confidentiality.</em></p>
+      <h3 data-en="Changes, suspension and records" data-gu="ફેરફારો, સ્થગિતતા અને રેકોર્ડ્સ">Changes, suspension and records</h3>
+      <p data-en="A material change to an approved study is re-reviewed before the change appears on the site. If a study's approval lapses, a concern is raised, or its link no longer matches its description, we may suspend the listing, ask for corrections, or withdraw it. Administrative decisions and changes are recorded so that there is a history of what was approved, when, and why." data-gu="મંજૂર થયેલા અભ્યાસમાં મહત્વપૂર્ણ ફેરફાર સાઇટ પર દેખાય તે પહેલાં ફરીથી સમીક્ષા કરવામાં આવે છે. જો અભ્યાસની મંજૂરી સમાપ્ત થાય, ચિંતા ઊભી થાય, અથવા તેની લિંક તેના વર્ણન સાથે મેળ ખાતી ન હોય, તો અમે સૂચિને સ્થગિત કરી શકીએ છીએ, સુધારા માંગી શકીએ છીએ અથવા તેને પાછી ખેંચી શકીએ છીએ. વહીવટી નિર્ણયો અને ફેરફારો રેકોર્ડ કરવામાં આવે છે જેથી શું મંજૂર કરવામાં આવ્યું, ક્યારે અને કેમ તેનો ઇતિહાસ રહે.">A material change to an approved study is re-reviewed before the change appears on the site. If a study's approval lapses, a concern is raised, or its link no longer matches its description, we may suspend the listing, ask for corrections, or withdraw it. Administrative decisions and changes are recorded so that there is a history of what was approved, when, and why.</p>
+      <p data-en="<em>Guiding references: the ICMR National Ethical Guidelines for Biomedical and Health Research Involving Human Participants (2017), which describe voluntary participation, informed consent, privacy and confidentiality.</em>" data-gu="<em>માર્ગદર્શક સંદર્ભો: ICMR રાષ્ટ્રીય નૈતિક માર્ગદર્શિકાઓ માનવ સહભાગીઓ સાથે સંબંધિત બાયોમેડિકલ અને આરોગ્ય સંશોધન માટે (૨૦૧૭), જે સ્વૈચ્છિક ભાગીદારી, માહિતગાર સંમતિ, ગોપનીયતા અને ગુપ્તતાનું વર્ણન કરે છે.</em>"><em>Guiding references: the ICMR National Ethical Guidelines for Biomedical and Health Research Involving Human Participants (2017), which describe voluntary participation, informed consent, privacy and confidentiality.</em></p>
     </div>
 
     <!-- 5. Privacy -->
     <div class="content-section">
-      <h2>5. Privacy and data protection</h2>
-      <p>We aim to collect as little personal data as possible. The table shows what is collected, by which part of the service.</p>
+      <h2 data-en="5. Privacy and data protection" data-gu="૫. ગોપનીયતા અને ડેટા સંરક્ષણ">5. Privacy and data protection</h2>
+      <p data-en="We aim to collect as little personal data as possible. The table shows what is collected, by which part of the service." data-gu="અમારો ધ્યેય શક્ય તેટલો ઓછો વ્યક્તિગત ડેટા એકત્રિત કરવાનો છે. કોષ્ટક દર્શાવે છે કે સેવાના કયા ભાગ દ્વારા શું એકત્રિત કરવામાં આવે છે.">We aim to collect as little personal data as possible. The table shows what is collected, by which part of the service.</p>
       
       <div class="table-wrapper">
         <table class="data-table">
           <thead>
             <tr>
-              <th>Part of the service</th>
-              <th>What is collected</th>
-              <th>Who handles it and for how long</th>
+              <th data-en="Part of the service" data-gu="સેવાનો ભાગ">Part of the service</th>
+              <th data-en="What is collected" data-gu="શું એકત્રિત કરવામાં આવે છે">What is collected</th>
+              <th data-en="Who handles it and for how long" data-gu="કોણ સંભાળે છે અને કેટલા સમય માટે">Who handles it and for how long</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Browsing this website</strong></td>
-              <td>Nothing about you. There is no login, and no analytics or tracking tools. Your language choice is saved in your own browser only.</td>
-              <td>Stays on your device. Clear your browser data to remove it.</td>
+              <td data-en="<strong>Browsing this website</strong>" data-gu="<strong>આ વેબસાઇટ બ્રાઉઝ કરવી</strong>"><strong>Browsing this website</strong></td>
+              <td data-en="Nothing about you. There is no login, and no analytics or tracking tools. Your language choice is saved in your own browser only." data-gu="તમારા વિશે કંઈ નહીં. ત્યાં કોઈ લોગિન નથી, અને કોઈ એનાલિટિક્સ અથવા ટ્રેકિંગ ટૂલ્સ નથી. તમારી ભાષાની પસંદગી ફક્ત તમારા પોતાના બ્રાઉઝરમાં સાચવવામાં આવે છે.">Nothing about you. There is no login, and no analytics or tracking tools. Your language choice is saved in your own browser only.</td>
+              <td data-en="Stays on your device. Clear your browser data to remove it." data-gu="તમારા ઉપકરણ પર જ રહે છે. તેને દૂર કરવા માટે તમારો બ્રાઉઝર ડેટા સાફ કરો.">Stays on your device. Clear your browser data to remove it.</td>
             </tr>
             <tr>
-              <td><strong>Participant sign-up (optional)</strong></td>
-              <td>Your email address only, to tell you about newly approved studies. Double opt-in confirmation; an unsubscribable link in every email.</td>
-              <td>Your email is added to Google Groups,which only sends messages related to new study announcements. You can unsubscribe at any time.</td>
+              <td data-en="<strong>Participant sign-up (optional)</strong>" data-gu="<strong>સહભાગી સાઇન-અપ (વૈકલ્પિક)</strong>"><strong>Participant sign-up (optional)</strong></td>
+              <td data-en="Your email address only, to tell you about newly approved studies. Double opt-in confirmation; an unsubscribable link in every email." data-gu="ફક્ત તમારું ઇમેઇલ સરનામું, તમને નવા મંજૂર થયેલા અભ્યાસો વિશે જણાવવા માટે. ડબલ ઓપ્ટ-ઇન પુષ્ટિ; દરેક ઇમેઇલમાં અનસબ્સ્ક્રાઇબ કરી શકાય તેવી લિંક.">Your email address only, to tell you about newly approved studies. Double opt-in confirmation; an unsubscribable link in every email.</td>
+              <td data-en="Your email is added to Google Groups,which only sends messages related to new study announcements. You can unsubscribe at any time." data-gu="તમારો ઇમેઇલ Google Groups માં ઉમેરવામાં આવે છે, જે ફક્ત નવી અભ્યાસ જાહેરાતો સંબંધિત સંદેશા મોકલે છે. તમે કોઈપણ સમયે અનસબ્સ્ક્રાઇબ કરી શકો છો.">Your email is added to Google Groups,which only sends messages related to new study announcements. You can unsubscribe at any time.</td>
             </tr>
             <tr>
-              <td><strong>Researcher application</strong></td>
-              <td>Name, institution, contact details, study details and ethics approval documents.</td>
-              <td>The form service and cloud storage we use (Google Forms and Google Drive). Kept as an administrative record of decisions.</td>
+              <td data-en="<strong>Researcher application</strong>" data-gu="<strong>સંશોધક અરજી</strong>"><strong>Researcher application</strong></td>
+              <td data-en="Name, institution, contact details, study details and ethics approval documents." data-gu="નામ, સંસ્થા, સંપર્ક વિગતો, અભ્યાસ વિગતો અને નૈતિકતા મંજૂરી દસ્તાવેજો.">Name, institution, contact details, study details and ethics approval documents.</td>
+              <td data-en="The form service and cloud storage we use (Google Forms and Google Drive). Kept as an administrative record of decisions." data-gu="અમે ઉપયોગ કરીએ છીએ તે ફોર્મ સેવા અને ક્લાઉડ સ્ટોરેજ (Google Forms અને Google Drive). નિર્ણયોના વહીવટી રેકોર્ડ તરીકે રાખવામાં આવે છે.">The form service and cloud storage we use (Google Forms and Google Drive). Kept as an administrative record of decisions.</td>
             </tr>
             <tr>
-              <td><strong>The survey itself</strong></td>
-              <td>Whatever the researcher's study asks for. We never receive it.</td>
-              <td>The researcher, under their own consent and privacy terms.</td>
+              <td data-en="<strong>The survey itself</strong>" data-gu="<strong>સર્વે પોતે</strong>"><strong>The survey itself</strong></td>
+              <td data-en="Whatever the researcher's study asks for. We never receive it." data-gu="સંશોધકનો અભ્યાસ જે માંગે છે તે બધું. અમને તે ક્યારેય પ્રાપ્ત થતું નથી.">Whatever the researcher's study asks for. We never receive it.</td>
+              <td data-en="The researcher, under their own consent and privacy terms." data-gu="સંશોધક, તેમની પોતાની સંમતિ અને ગોપનીયતાની શરતો હેઠળ.">The researcher, under their own consent and privacy terms.</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <h3>Law</h3>
-      <p>Personal data in India is governed by the Digital Personal Data Protection Act, 2023, and the PDPR Rules, 2025 (notified in November 2025). The Rules come into force in phases, with most obligations expected about 18 months after notification (around May 2027). We aim to follow the Act's principles already: clear notice, consent that is free and specific, collecting only what is needed, keeping it only as long as needed, and keeping it secure.</p>
-      <p>For the optional email list and researcher applications, the maintainer decides why and how the data is used, and is therefore the person responsible for it under the Act (the "data fiduciary"). Some of the services we use may store data outside India.</p>
+      <h3 data-en="Law" data-gu="કાયદો">Law</h3>
+      <p data-en="Personal data in India is governed by the Digital Personal Data Protection Act, 2023, and the PDPR Rules, 2025 (notified in November 2025). The Rules come into force in phases, with most obligations expected about 18 months after notification (around May 2027). We aim to follow the Act's principles already: clear notice, consent that is free and specific, collecting only what is needed, keeping it only as long as needed, and keeping it secure." data-gu="ભારતમાં વ્યક્તિગત ડેટા ડિજિટલ પર્સનલ ડેટા પ્રોટેક્શન એક્ટ, ૨૦૨૩ અને PDPR નિયમો, ૨૦૨૫ (નવેમ્બર ૨૦૨૫ માં સૂચિત) દ્વારા સંચાલિત થાય છે. નિયમો તબક્કાવાર અમલમાં આવે છે, જેમાં મોટાભાગની જવાબદારીઓ સૂચના પછી લગભગ ૧૮ મહિના (આશરે મે ૨૦૨૭)માં અપેક્ષિત છે. અમારો ધ્યેય પહેલેથી જ કાયદાના સિદ્ધાંતોનું પાલન કરવાનો છે: સ્પષ્ટ સૂચના, મુક્ત અને વિશિષ્ટ સંમતિ, ફક્ત જરૂરી હોય તે જ એકત્રિત કરવું, ફક્ત જરૂરી હોય ત્યાં સુધી તેને રાખવું અને તેને સુરક્ષિત રાખવું.">Personal data in India is governed by the Digital Personal Data Protection Act, 2023, and the PDPR Rules, 2025 (notified in November 2025). The Rules come into force in phases, with most obligations expected about 18 months after notification (around May 2027). We aim to follow the Act's principles already: clear notice, consent that is free and specific, collecting only what is needed, keeping it only as long as needed, and keeping it secure.</p>
+      <p data-en="For the optional email list and researcher applications, the maintainer decides why and how the data is used, and is therefore the person responsible for it under the Act (the &quot;data fiduciary&quot;). Some of the services we use may store data outside India." data-gu="વૈકલ્પિક ઇમેઇલ સૂચિ અને સંશોધક અરજીઓ માટે, જાળવનાર નક્કી કરે છે કે ડેટાનો ઉપયોગ કેમ અને કેવી રીતે થાય છે, અને તેથી તે કાયદા હેઠળ તેના માટે જવાબદાર વ્યક્તિ છે (&quot;ડેટા ફિડ્યુશિયરી&quot;). અમે ઉપયોગ કરીએ છીએ તેવી કેટલીક સેવાઓ ભારતની બહાર ડેટા સ્ટોર કરી શકે છે.">For the optional email list and researcher applications, the maintainer decides why and how the data is used, and is therefore the person responsible for it under the Act (the "data fiduciary"). Some of the services we use may store data outside India.</p>
       
       <div style="background: var(--alert-bg); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--alert-ink); margin-top: 1rem;">
-        <p style="margin: 0; color: var(--alert-ink); font-weight: 500;"><strong>Keep your own safety in mind.</strong> Never share OTPs, passwords, PINs, Aadhaar, PAN or bank details through a research survey. If a study asks, do not continue, and tell us.</p>
+        <p style="margin: 0; color: var(--alert-ink); font-weight: 500;" data-en="<strong>Keep your own safety in mind.</strong> Never share OTPs, passwords, PINs, Aadhaar, PAN or bank details through a research survey. If a study asks, do not continue, and tell us." data-gu="<strong>તમારી પોતાની સલામતી ધ્યાનમાં રાખો.</strong> સંશોધન સર્વે દ્વારા OTP, પાસવર્ડ, PIN, આધાર, પાન અથવા બેંક વિગતો ક્યારેય શેર કરશો નહીં. જો કોઈ અભ્યાસ પૂછે, તો ચાલુ રાખશો નહીં, અને અમને જણાવો."><strong>Keep your own safety in mind.</strong> Never share OTPs, passwords, PINs, Aadhaar, PAN or bank details through a research survey. If a study asks, do not continue, and tell us.</p>
       </div>
     </div>
 
     <!-- 7. Content & Links -->
     <div class="content-section">
-      <h2>6. Content, copyright and external links</h2>
-      <p>The text and design of this website are © GujPsychSurvey. Study titles, descriptions and survey links are supplied by researchers, who remain responsible for them and for any instruments or materials they use. Links to other websites, including researchers' surveys and the GujPsych Repository, are provided for convenience. We are not responsible for their content or privacy practices.</p>
+      <h2 data-en="6. Content, copyright and external links" data-gu="૬. સામગ્રી, કૉપીરાઇટ અને બાહ્ય લિંક્સ">6. Content, copyright and external links</h2>
+      <p data-en="The text and design of this website are © GujPsychSurvey. Study titles, descriptions and survey links are supplied by researchers, who remain responsible for them and for any instruments or materials they use. Links to other websites, including researchers' surveys and the GujPsych Repository, are provided for convenience. We are not responsible for their content or privacy practices." data-gu="આ વેબસાઇટનું ટેક્સ્ટ અને ડિઝાઇન © GujPsychSurvey છે. અભ્યાસ શીર્ષકો, વર્ણનો અને સર્વે લિંક્સ સંશોધકો દ્વારા પ્રદાન કરવામાં આવે છે, જે તેમના અને તેમના દ્વારા ઉપયોગમાં લેવાતા કોઈપણ સાધનો અથવા સામગ્રી માટે જવાબદાર રહે છે. અન્ય વેબસાઇટ્સની લિંક્સ, જેમાં સંશોધકોના સર્વે અને ગુજસાઇક રિપોઝિટરીનો સમાવેશ થાય છે, તે સુવિધા માટે પ્રદાન કરવામાં આવી છે. અમે તેમની સામગ્રી અથવા ગોપનીયતા પ્રથાઓ માટે જવાબદાર નથી.">The text and design of this website are © GujPsychSurvey. Study titles, descriptions and survey links are supplied by researchers, who remain responsible for them and for any instruments or materials they use. Links to other websites, including researchers' surveys and the GujPsych Repository, are provided for convenience. We are not responsible for their content or privacy practices.</p>
     </div>
 
     <!-- 8. Developer -->
     <div class="content-section">
-      <h2>7. Developer and maintainer</h2>
-      <p>GujPsychSurvey is designed, built and maintained by:</p>
+      <h2 data-en="7. Developer and maintainer" data-gu="૭. વિકાસકર્તા અને જાળવનાર">7. Developer and maintainer</h2>
+      <p data-en="GujPsychSurvey is designed, built and maintained by:" data-gu="GujPsychSurvey આના દ્વારા ડિઝાઇન, બનાવવામાં અને જાળવવામાં આવે છે:">GujPsychSurvey is designed, built and maintained by:</p>
       
       <div class="step-card" style="margin-top: 1.5rem;">
-        <p><strong>Name:</strong> Dr Darshankumar Dharaiya</p>
-        <p><strong>Qualifications:</strong> MD Psychiatry</p>
-        <p><strong>Role:</strong> Developer, administrator and maintainer of GujPsychSurvey</p>
-        <p><strong>Professional affiliation:</strong> This website is an independent personal project and is not an institutional service.</p>
-        <p><strong>Contact:</strong> <a href="mailto:Dharaiya.darshan@gmail.com">Dharaiya.darshan@gmail.com</a></p>
-        <p><strong>ORCID:</strong> <a href="https://orcid.org/0009-0009-9351-8602" target="_blank" rel="noopener">https://orcid.org/0009-0009-9351-8602</a></p>
-        <p><strong>Related project:</strong> <a href="https://www.gujpsych-repository.com/" target="_blank" rel="noopener">GujPsych Repository</a>, a centralized open-access collection of Gujarati psychometric scales and mental health resources.</p>
-        <p><strong>Funding and conflicts of interest:</strong> None</p>
+        <p><strong data-en="Name:" data-gu="નામ:">Name:</strong> <span data-no-translate>Dr Darshankumar Dharaiya</span></p>
+        <p><strong data-en="Qualifications:" data-gu="લાયકાત:">Qualifications:</strong> <span data-no-translate>MD Psychiatry</span></p>
+        <p><strong data-en="Role:" data-gu="ભૂમિકા:">Role:</strong> <span data-en="Developer, administrator and maintainer of GujPsychSurvey" data-gu="GujPsychSurvey ના વિકાસકર્તા, વ્યવસ્થાપક અને જાળવનાર">Developer, administrator and maintainer of GujPsychSurvey</span></p>
+        <p><strong data-en="Professional affiliation:" data-gu="વ્યાવસાયિક જોડાણ:">Professional affiliation:</strong> <span data-en="This website is an independent personal project and is not an institutional service." data-gu="આ વેબસાઇટ એક સ્વતંત્ર વ્યક્તિગત પ્રોજેક્ટ છે અને તે સંસ્થાકીય સેવા નથી.">This website is an independent personal project and is not an institutional service.</span></p>
+        <p><strong data-en="Contact:" data-gu="સંપર્ક:">Contact:</strong> <a href="mailto:Dharaiya.darshan@gmail.com" data-no-translate>Dharaiya.darshan@gmail.com</a></p>
+        <p><strong data-en="ORCID:" data-gu="ORCID:">ORCID:</strong> <a href="https://orcid.org/0009-0009-9351-8602" target="_blank" rel="noopener" data-no-translate>https://orcid.org/0009-0009-9351-8602</a></p>
+        <p><strong data-en="Related project:" data-gu="સંબંધિત પ્રોજેક્ટ:">Related project:</strong> <a href="https://www.gujpsych-repository.com/" target="_blank" rel="noopener" data-en="GujPsych Repository" data-gu="GujPsych રિપોઝિટરી">GujPsych Repository</a><span data-en=", a centralized open-access collection of Gujarati psychometric scales and mental health resources." data-gu=", ગુજરાતી મનોમિતિક માપદંડો અને માનસિક સ્વાસ્થ્ય સંસાધનોનો કેન્દ્રીય ઓપન-એક્સેસ સંગ્રહ.">, a centralized open-access collection of Gujarati psychometric scales and mental health resources.</span></p>
+        <p><strong data-en="Funding and conflicts of interest:" data-gu="ધોરણ અને હિતોના સંઘર્ષ:">Funding and conflicts of interest:</strong> <span data-en="None" data-gu="કોઈ નહીં">None</span></p>
       </div>
 
-      <p style="margin-top: 1rem;"><strong>Administration:</strong> The maintainer reviews researcher applications, verifies ethics approval, publishes and edits listings, suspends or withdraws studies, and archives completed ones. The individual researcher and participants are responsible for individual studies and participation.</p>
+      <p style="margin-top: 1rem;" data-en="<strong>Administration:</strong> The maintainer reviews researcher applications, verifies ethics approval, publishes and edits listings, suspends or withdraws studies, and archives completed ones. The individual researcher and participants are responsible for individual studies and participation." data-gu="<strong>વહીવટ:</strong> જાળવનાર સંશોધક અરજીઓની સમીક્ષા કરે છે, નૈતિકતા મંજૂરીની ચકાસણી કરે છે, સૂચિઓ પ્રકાશિત અને સંપાદિત કરે છે, અભ્યાસોને સ્થગિત અથવા પાછા ખેંચે છે, અને પૂર્ણ થયેલા અભ્યાસોને આર્કાઇવ કરે છે. વ્યક્તિગત સંશોધક અને સહભાગીઓ વ્યક્તિગત અભ્યાસો અને ભાગીદારી માટે જવાબદાર છે."><strong>Administration:</strong> The maintainer reviews researcher applications, verifies ethics approval, publishes and edits listings, suspends or withdraws studies, and archives completed ones. The individual researcher and participants are responsible for individual studies and participation.</p>
     </div>
 
     <!-- 9. Contact -->
     <div class="content-section">
-      <h2>8. Contact and feedback</h2>
-      <p>For questions about the site, corrections, privacy requests, concerns about a listed study, or to close or withdraw a study, write to: <a href="mailto:gujpsych.survey@gmail.com">gujpsych.survey@gmail.com</a></p>
-      <p>This is a volunteer-run service and may take a few days to reply. This email is not for emergencies; for urgent help, see the <a href="get-help.html">Get Help</a> page.</p>
-      <p style="font-size: 0.9rem; color: var(--muted); margin-top: 2rem;">Page last updated: 07 Nov 2026</p>
+      <h2 data-en="8. Contact and feedback" data-gu="૮. સંપર્ક અને પ્રતિસાદ">8. Contact and feedback</h2>
+      <p data-en="For questions about the site, corrections, privacy requests, concerns about a listed study, or to close or withdraw a study, write to: <a href=&quot;mailto:gujpsych.survey@gmail.com&quot;>gujpsych.survey@gmail.com</a>" data-gu="સાઇટ વિશેના પ્રશ્નો, સુધારાઓ, ગોપનીયતા વિનંતીઓ, સૂચિબદ્ધ અભ્યાસ વિશેની ચિંતાઓ, અથવા અભ્યાસ બંધ કરવા અથવા પાછો ખેંચવા માટે, આના પર લખો: <a href=&quot;mailto:gujpsych.survey@gmail.com&quot;>gujpsych.survey@gmail.com</a>">For questions about the site, corrections, privacy requests, concerns about a listed study, or to close or withdraw a study, write to: <a href="mailto:gujpsych.survey@gmail.com">gujpsych.survey@gmail.com</a></p>
+      <p data-en="This is a volunteer-run service and may take a few days to reply. This email is not for emergencies; for urgent help, see the <a href=&quot;get-help.html&quot;>Get Help</a> page." data-gu="આ સ્વયંસેવકો દ્વારા ચલાવવામાં આવતી સેવા છે અને જવાબ આપવામાં થોડા દિવસો લાગી શકે છે. આ ઇમેઇલ કટોકટી માટે નથી; તાત્કાલિક મદદ માટે, <a href=&quot;get-help.html&quot;>મદદ મેળવો</a> પૃષ્ઠ જુઓ.">This is a volunteer-run service and may take a few days to reply. This email is not for emergencies; for urgent help, see the <a href="get-help.html">Get Help</a> page.</p>
+      <p style="font-size: 0.9rem; color: var(--muted); margin-top: 2rem;" data-en="Page last updated: 07 Nov 2026" data-gu="પૃષ્ઠ છેલ્લે અપડેટ કરેલ: ૦૭ નવેમ્બર ૨૦૨૬">Page last updated: 07 Nov 2026</p>
     </div>
 
   </div>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Active Studies — GujPsychSurvey</title>
+<title data-en="Active Studies — GujPsychSurvey" data-gu="સક્રિય અભ્યાસો — GujPsychSurvey">Active Studies — GujPsychSurvey</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,6 +25,14 @@
   .empty-state { text-align: center; padding: 4rem 2rem; background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); }
   .empty-state h3 { font-size: 1.2rem; color: var(--ink); margin-bottom: 0.5rem; }
 </style>
+
+<!-- Prevent flash of English -->
+<script>
+  const savedLang = localStorage.getItem('gps-lang');
+  if (savedLang) {
+    document.documentElement.lang = savedLang;
+  }
+</script>
 </head>
 <body>
 
@@ -33,37 +41,37 @@
 <main>
   <div class="container" style="padding-top: 3rem; padding-bottom: 4rem; max-width: 1200px;">
     
-    <h1 style="color: var(--ink); margin-bottom: 0.5rem;">Active Studies</h1>
-    <p class="lead" style="margin-bottom: 2rem;">GujPsychSurvey · Studies currently recruiting participants</p>
+    <h1 style="color: var(--ink); margin-bottom: 0.5rem;" data-en="Active Studies" data-gu="સક્રિય અભ્યાસો">Active Studies</h1>
+    <p class="lead" style="margin-bottom: 2rem;" data-en="GujPsychSurvey · Studies currently recruiting participants" data-gu="GujPsychSurvey · હાલમાં સહભાગીઓની ભરતી કરતા અભ્યાસો">GujPsychSurvey · Studies currently recruiting participants</p>
 
     <div style="max-width: 900px;">
-      <p>This page lists research studies in Gujarat that are open for participation right now. Each study is run by its own researchers on their own survey platform. GujPsychSurvey only lists the study and sends you to the researcher's link; it does not host the questionnaire or collect your responses.</p>
+      <p data-en="This page lists research studies in Gujarat that are open for participation right now. Each study is run by its own researchers on their own survey platform. GujPsychSurvey only lists the study and sends you to the researcher's link; it does not host the questionnaire or collect your responses." data-gu="આ પૃષ્ઠ ગુજરાતમાં સંશોધન અભ્યાસોની સૂચિ આપે છે જે હમણાં ભાગીદારી માટે ખુલ્લા છે. દરેક અભ્યાસ તેમના પોતાના સંશોધકો દ્વારા તેમના પોતાના સર્વે પ્લેટફોર્મ પર ચલાવવામાં આવે છે. GujPsychSurvey ફક્ત અભ્યાસની સૂચિ આપે છે અને તમને સંશોધકની લિંક પર મોકલે છે; તે પ્રશ્નાવલી હોસ્ટ કરતું નથી અથવા તમારા પ્રતિસાદો એકત્રિત કરતું નથી.">This page lists research studies in Gujarat that are open for participation right now. Each study is run by its own researchers on their own survey platform. GujPsychSurvey only lists the study and sends you to the researcher's link; it does not host the questionnaire or collect your responses.</p>
       
-      <p>Every study listed here has been submitted with Institutional Ethics Committee (IEC) approval details, which have been checked administratively. Please read each entry carefully and decide for yourself. Taking part is entirely voluntary.</p>
+      <p data-en="Every study listed here has been submitted with Institutional Ethics Committee (IEC) approval details, which have been checked administratively. Please read each entry carefully and decide for yourself. Taking part is entirely voluntary." data-gu="અહીં સૂચિબદ્ધ દરેક અભ્યાસ સંસ્થાકીય નૈતિકતા સમિતિ (IEC) મંજૂરીની વિગતો સાથે સબમિટ કરવામાં આવ્યો છે, જેની વહીવટી ચકાસણી કરવામાં આવી છે. કૃપા કરીને દરેક એન્ટ્રી કાળજીપૂર્વક વાંચો અને તમારા માટે નિર્ણય લો. ભાગ લેવો સંપૂર્ણપણે સ્વૈચ્છિક છે.">Every study listed here has been submitted with Institutional Ethics Committee (IEC) approval details, which have been checked administratively. Please read each entry carefully and decide for yourself. Taking part is entirely voluntary.</p>
 
       <div class="warning-box">
-        <p><strong>Before you click:</strong> Read the consent information on the researcher's survey. Never share OTPs, passwords, PINs, Aadhaar, PAN or bank details with any study.</p>
+        <p data-en="<strong>Before you click:</strong> Read the consent information on the researcher's survey. Never share OTPs, passwords, PINs, Aadhaar, PAN or bank details with any study." data-gu="<strong>તમે ક્લિક કરો તે પહેલાં:</strong> સંશોધકના સર્વે પર સંમતિની માહિતી વાંચો. કોઈપણ અભ્યાસ સાથે OTP, પાસવર્ડ, PIN, આધાર, પાન અથવા બેંક વિગતો ક્યારેય શેર કરશો નહીં."><strong>Before you click:</strong> Read the consent information on the researcher's survey. Never share OTPs, passwords, PINs, Aadhaar, PAN or bank details with any study.</p>
       </div>
 
-      <h2 style="font-size: 1.3rem; margin-top: 2rem; color: var(--ink);">How to read the table</h2>
+      <h2 style="font-size: 1.3rem; margin-top: 2rem; color: var(--ink);" data-en="How to read the table" data-gu="કોષ્ટક કેવી રીતે વાંચવું">How to read the table</h2>
       <ul style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
-        <li><strong>Study title and short description:</strong> What the study is about, in one or two lines.</li>
-        <li><strong>Principal investigator & PI details:</strong> Who is responsible for the study, and where they work.</li>
-        <li><strong>Survey language:</strong> Gujarati, English, Hindi, or a combination.</li>
-        <li><strong>Who can take part:</strong> The inclusion and exclusion criteria. Please take part only if you are eligible.</li>
-        <li><strong>Time needed:</strong> The estimated time to complete the study.</li>
-        <li><strong>IEC details:</strong> The ethics committee that approved the study and its approval number.</li>
-        <li><strong>Participate:</strong> Opens the researcher's own survey in a new tab. The link is shown only while recruitment is open.</li>
+        <li data-en="<strong>Study title and short description:</strong> What the study is about, in one or two lines." data-gu="<strong>અભ્યાસનું શીર્ષક અને ટૂંકું વર્ણન:</strong> અભ્યાસ શેના વિશે છે, એક કે બે લાઇનમાં."><strong>Study title and short description:</strong> What the study is about, in one or two lines.</li>
+        <li data-en="<strong>Principal investigator & PI details:</strong> Who is responsible for the study, and where they work." data-gu="<strong>પ્રિન્સિપલ ઇન્વેસ્ટિગેટર અને PI વિગતો:</strong> અભ્યાસ માટે કોણ જવાબદાર છે, અને તેઓ ક્યાં કામ કરે છે."><strong>Principal investigator & PI details:</strong> Who is responsible for the study, and where they work.</li>
+        <li data-en="<strong>Survey language:</strong> Gujarati, English, Hindi, or a combination." data-gu="<strong>સર્વે ભાષા:</strong> ગુજરાતી, અંગ્રેજી, હિન્દી અથવા સંયોજન."><strong>Survey language:</strong> Gujarati, English, Hindi, or a combination.</li>
+        <li data-en="<strong>Who can take part:</strong> The inclusion and exclusion criteria. Please take part only if you are eligible." data-gu="<strong>કોણ ભાગ લઈ શકે છે:</strong> સમાવેશ અને બાકાત માપદંડ. કૃપા કરીને ફક્ત ત્યારે જ ભાગ લો જો તમે પાત્ર હોવ."><strong>Who can take part:</strong> The inclusion and exclusion criteria. Please take part only if you are eligible.</li>
+        <li data-en="<strong>Time needed:</strong> The estimated time to complete the study." data-gu="<strong>જરૂરી સમય:</strong> અભ્યાસ પૂર્ણ કરવા માટે અંદાજિત સમય."><strong>Time needed:</strong> The estimated time to complete the study.</li>
+        <li data-en="<strong>IEC details:</strong> The ethics committee that approved the study and its approval number." data-gu="<strong>IEC વિગતો:</strong> અભ્યાસ મંજૂર કરનાર નૈતિકતા સમિતિ અને તેનો મંજૂરી નંબર."><strong>IEC details:</strong> The ethics committee that approved the study and its approval number.</li>
+        <li data-en="<strong>Participate:</strong> Opens the researcher's own survey in a new tab. The link is shown only while recruitment is open." data-gu="<strong>ભાગ લો:</strong> નવા ટૅબમાં સંશોધકનો પોતાનો સર્વે ખોલે છે. લિંક ફક્ત ત્યારે જ દર્શાવવામાં આવે છે જ્યારે ભરતી ખુલ્લી હોય."><strong>Participate:</strong> Opens the researcher's own survey in a new tab. The link is shown only while recruitment is open.</li>
       </ul>
     </div>
 
     <!-- ACTIVE STUDIES TABLE SECTION -->
-    <h2 style="font-size: 1.5rem; color: var(--ink); margin-bottom: 1rem;">Studies open for participation</h2>
+    <h2 style="font-size: 1.5rem; color: var(--ink); margin-bottom: 1rem;" data-en="Studies open for participation" data-gu="ભાગીદારી માટે ખુલ્લા અભ્યાસો">Studies open for participation</h2>
 
     <!-- EMPTY STATE (Remove this div when you add your first study) -->
     <div class="empty-state">
-      <h3>No studies are recruiting right now.</h3>
-      <p>Please check back soon, or join the participant list to be told when one opens.</p>
+      <h3 data-en="No studies are recruiting right now." data-gu="હાલમાં કોઈ અભ્યાસ ભરતી કરી રહ્યું નથી.">No studies are recruiting right now.</h3>
+      <p data-en="Please check back soon, or join the participant list to be told when one opens." data-gu="કૃપા કરીને ટૂંક સમયમાં ફરી તપાસો, અથવા જ્યારે કોઈ ખુલે ત્યારે જાણ કરવા માટે સહભાગી યાદીમાં જોડાઓ.">Please check back soon, or join the participant list to be told when one opens.</p>
     </div>
 
     <!-- 
@@ -79,15 +87,15 @@
       <table class="studies-table">
         <thead>
           <tr>
-            <th>No.</th>
-            <th>Study Title & Description</th>
-            <th>PI Details</th>
-            <th>Survey Language</th>
-            <th>Eligibility</th>
-            <th>Time Needed</th>
-            <th>IEC Details</th>
-            <th>Date Listed</th>
-            <th>Participate</th>
+            <th data-en="No." data-gu="ક્રમ">No.</th>
+            <th data-en="Study Title & Description" data-gu="અભ્યાસનું શીર્ષક અને વર્ણન">Study Title & Description</th>
+            <th data-en="PI Details" data-gu="PI વિગતો">PI Details</th>
+            <th data-en="Survey Language" data-gu="સર્વે ભાષા">Survey Language</th>
+            <th data-en="Eligibility" data-gu="પાત્રતા">Eligibility</th>
+            <th data-en="Time Needed" data-gu="જરૂરી સમય">Time Needed</th>
+            <th data-en="IEC Details" data-gu="IEC વિગતો">IEC Details</th>
+            <th data-en="Date Listed" data-gu="સૂચિબદ્ધ તારીખ">Date Listed</th>
+            <th data-en="Participate" data-gu="ભાગ લો">Participate</th>
           </tr>
         </thead>
         <tbody>
@@ -109,7 +117,7 @@
               <span style="color: var(--muted);">Approval: XX/2026</span>
             </td>
             <td>01 Nov 2026</td>
-            <td><a href="https://link-to-survey.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Click Here</a></td>
+            <td><a href="https://link-to-survey.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;" data-en="Click Here" data-gu="અહીં ક્લિક કરો">Click Here</a></td>
           </tr>
           <!-- ADD NEW ROWS HERE -->
         </tbody>

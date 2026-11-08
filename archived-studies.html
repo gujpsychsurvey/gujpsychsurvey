@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Archived Studies — GujPsychSurvey</title>
+<title data-en="Archived Studies — GujPsychSurvey" data-gu="આર્કાઇવ કરેલા અભ્યાસો — GujPsychSurvey">Archived Studies — GujPsychSurvey</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,14 @@
   .empty-state { text-align: center; padding: 4rem 2rem; background: var(--surface); border: 1px dashed var(--line); border-radius: 8px; color: var(--muted); }
   .empty-state h3 { font-size: 1.2rem; color: var(--ink); margin-bottom: 0.5rem; }
 </style>
+
+<!-- Prevent flash of English -->
+<script>
+  const savedLang = localStorage.getItem('gps-lang');
+  if (savedLang) {
+    document.documentElement.lang = savedLang;
+  }
+</script>
 </head>
 <body>
 
@@ -29,28 +37,28 @@
 <main>
   <div class="container" style="padding-top: 3rem; padding-bottom: 4rem; max-width: 1200px;">
     
-    <h1 style="color: var(--ink); margin-bottom: 0.5rem;">Archived Studies</h1>
-    <p class="lead" style="margin-bottom: 2rem;">GujPsychSurvey · Studies that are no longer recruiting</p>
+    <h1 style="color: var(--ink); margin-bottom: 0.5rem;" data-en="Archived Studies" data-gu="આર્કાઇવ કરેલા અભ્યાસો">Archived Studies</h1>
+    <p class="lead" style="margin-bottom: 2rem;" data-en="GujPsychSurvey · Studies that are no longer recruiting" data-gu="GujPsychSurvey · હવે ભરતી ન કરતા અભ્યાસો">GujPsychSurvey · Studies that are no longer recruiting</p>
 
     <div style="max-width: 900px;">
-      <p>This page lists studies that were previously listed on GujPsychSurvey but are no longer recruiting. The participation link has been removed. The details remain visible for transparency and so that past listings can be checked.</p>
+      <p data-en="This page lists studies that were previously listed on GujPsychSurvey but are no longer recruiting. The participation link has been removed. The details remain visible for transparency and so that past listings can be checked." data-gu="આ પૃષ્ઠ એવા અભ્યાસોની સૂચિ આપે છે જે અગાઉ GujPsychSurvey પર સૂચિબદ્ધ હતા પરંતુ હવે ભરતી કરી રહ્યા નથી. ભાગીદારી લિંક દૂર કરવામાં આવી છે. પારદર્શિતા માટે અને જેથી ભૂતકાળની સૂચિઓ ચકાસી શકાય તે માટે વિગતો દૃશ્યમાન રહે છે.">This page lists studies that were previously listed on GujPsychSurvey but are no longer recruiting. The participation link has been removed. The details remain visible for transparency and so that past listings can be checked.</p>
       
-      <p>A study may move here because recruitment finished, its ethics approval lapsed, or a concern was found.</p>
+      <p data-en="A study may move here because recruitment finished, its ethics approval lapsed, or a concern was found." data-gu="ભરતી પૂર્ણ થવાથી, તેની નૈતિકતા મંજૂરી સમાપ્ત થવાથી અથવા ચિંતા મળી આવવાથી અભ્યાસ અહીં ખસી શકે છે.">A study may move here because recruitment finished, its ethics approval lapsed, or a concern was found.</p>
 
-      <h2 style="font-size: 1.3rem; margin-top: 2rem; color: var(--ink);">Status Key</h2>
+      <h2 style="font-size: 1.3rem; margin-top: 2rem; color: var(--ink);" data-en="Status Key" data-gu="સ્થિતિ કી">Status Key</h2>
       <ul style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
-        <li><strong>Completed:</strong> Recruitment finished as planned.</li>
-        <li><strong>Withdrawn:</strong> The study was stopped or removed before completion, by the researchers or by us.</li>
+        <li data-en="<strong>Completed:</strong> Recruitment finished as planned." data-gu="<strong>પૂર્ણ:</strong> ભરતી યોજના મુજબ પૂર્ણ થઈ."><strong>Completed:</strong> Recruitment finished as planned.</li>
+        <li data-en="<strong>Withdrawn:</strong> The study was stopped or removed before completion, by the researchers or by us." data-gu="<strong>પાછળ ખેંચાયેલ:</strong> સંશોધકો દ્વારા અથવા અમારા દ્વારા અભ્યાસ પૂર્ણ થાય તે પહેલાં બંધ કરવામાં આવ્યો હતો અથવા દૂર કરવામાં આવ્યો હતો."><strong>Withdrawn:</strong> The study was stopped or removed before completion, by the researchers or by us.</li>
       </ul>
     </div>
 
     <!-- ARCHIVED STUDIES TABLE SECTION -->
-    <h2 style="font-size: 1.5rem; color: var(--ink); margin-bottom: 1rem;">Closed Studies</h2>
+    <h2 style="font-size: 1.5rem; color: var(--ink); margin-bottom: 1rem;" data-en="Closed Studies" data-gu="બંધ થયેલા અભ્યાસો">Closed Studies</h2>
 
     <!-- EMPTY STATE (Remove this div when you add your first study) -->
     <div class="empty-state">
-      <h3>No archived studies at the moment.</h3>
-      <p>Completed and withdrawn studies will appear here.</p>
+      <h3 data-en="No archived studies at the moment." data-gu="હાલમાં કોઈ આર્કાઇવ કરેલા અભ્યાસો નથી.">No archived studies at the moment.</h3>
+      <p data-en="Completed and withdrawn studies will appear here." data-gu="પૂર્ણ અને પાછળ ખેંચાયેલા અભ્યાસો અહીં દેખાશે.">Completed and withdrawn studies will appear here.</p>
     </div>
 
     <!-- 
@@ -66,14 +74,14 @@
       <table class="studies-table">
         <thead>
           <tr>
-            <th>No.</th>
-            <th>Study Title & Description</th>
-            <th>PI Details</th>
-            <th>Survey Language</th>
-            <th>IEC Details</th>
-            <th>Date Listed</th>
-            <th>Date Closed</th>
-            <th>Status</th>
+            <th data-en="No." data-gu="ક્રમ">No.</th>
+            <th data-en="Study Title & Description" data-gu="અભ્યાસનું શીર્ષક અને વર્ણન">Study Title & Description</th>
+            <th data-en="PI Details" data-gu="PI વિગતો">PI Details</th>
+            <th data-en="Survey Language" data-gu="સર્વે ભાષા">Survey Language</th>
+            <th data-en="IEC Details" data-gu="IEC વિગતો">IEC Details</th>
+            <th data-en="Date Listed" data-gu="સૂચિબદ્ધ તારીખ">Date Listed</th>
+            <th data-en="Date Closed" data-gu="બંધ થયાની તારીખ">Date Closed</th>
+            <th data-en="Status" data-gu="સ્થિતિ">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -94,7 +102,7 @@
             </td>
             <td>01 Sep 2026</td>
             <td>01 Nov 2026</td>
-            <td><span class="badge" style="background: #ece9e1; color: #4a4638;">Completed</span></td>
+            <td><span class="badge" style="background: #ece9e1; color: #4a4638;" data-en="Completed" data-gu="પૂર્ણ">Completed</span></td>
           </tr>
           <!-- ADD NEW ROWS HERE -->
         </tbody>

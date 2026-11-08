@@ -57,4 +57,47 @@ if (maintainerSlot) {
     .catch(err => console.error('Error loading maintainer:', err));
 }
 
-// --- Language toggle REMOVED (Site is now English-only) ---
+// --- BILINGUAL ENGINE ---
+function applyLanguage(lang) {
+  document.documentElement.lang = lang; // Sets <html lang="gu">
+  
+  // 1. Update Toggle Button Text/State
+  const toggleBtn = document.getElementById('lang-toggle');
+  if (toggleBtn) {
+    toggleBtn.textContent = lang === 'en' ? 'ગુજરાતી' : 'English';
+    toggleBtn.setAttribute('aria-label', lang === 'en' ? 'Switch to Gujarati' : 'Switch to English');
+  }
+
+  // 2. Swap all text elements
+  document.querySelectorAll('[data-en]').forEach(el => {
+    // Skip elements marked to stay in English
+    if (el.hasAttribute('data-no-translate')) return; 
+    
+    const text = el.getAttribute(`data-${lang}`);
+    if (text) {
+      // If it's an input/placeholder, handle differently
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = text;
+      } else {
+        el.innerHTML = text;
+      }
+    }
+  });
+
+  // 3. Save preference
+  localStorage.setItem('gps-lang', lang);
+}
+
+// Initialize language on load
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('gps-lang') || 'en';
+  applyLanguage(savedLang);
+  
+  // Attach click event to toggle (will work once nav.html is loaded)
+  document.addEventListener('click', (e) => {
+    if (e.target && e.target.id === 'lang-toggle') {
+      const currentLang = document.documentElement.lang;
+      applyLanguage(currentLang === 'en' ? 'gu' : 'en');
+    }
+  });
+});

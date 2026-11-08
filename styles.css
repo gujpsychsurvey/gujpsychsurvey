@@ -335,3 +335,19 @@ a:hover { text-decoration: underline; }
     padding: 0.75rem 1rem;
   }
 }
+
+/* --- BILINGUAL TYPOGRAPHY --- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;700&display=swap');
+
+html[lang="gu"] body {
+  /* Fallback to Noto Sans Gujarati for Gujarati text */
+  font-family: 'Noto Sans Gujarati', 'DM Sans', sans-serif;
+  /* Gujarati script often needs a tiny bit more line-height for legibility */
+  line-height: 1.6; 
+}
+
+html[lang="gu"] h1, 
+html[lang="gu"] h2, 
+html[lang="gu"] h3 {
+  line-height: 1.3;
+}
