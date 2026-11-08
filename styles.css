@@ -221,6 +221,7 @@ a:hover { text-decoration: underline; }
   flex-wrap: wrap; 
   gap: 0.75rem 1.25rem; 
   margin-top: 0.5rem;
+  justify-content: center; /* <-this brings links in centre */
 }
 
 .footer-disclaimer {
