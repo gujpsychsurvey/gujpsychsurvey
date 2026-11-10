@@ -351,3 +351,22 @@ html[lang="gu"] h2,
 html[lang="gu"] h3 {
   line-height: 1.3;
 }
+
+#lang-toggle {
+  background: var(--surface);
+  border: 2px solid var(--line);
+  color: var(--accent); /* Changed to blue to make it highlight */
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: 'DM Sans', 'Noto Sans Gujarati', sans-serif;
+  font-weight: 600; /* Made slightly bolder */
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+#lang-toggle:hover {
+  background: var(--accent); /* Solid blue background on hover */
+  color: #ffffff; /* White text on hover */
+  border-color: var(--accent);
+}
